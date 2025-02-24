@@ -99,8 +99,7 @@ void calcAverage(student students[], int studentCnt, int testsCnt) {
         students[i].average = total / testsCnt;
         students[i].letterGrade = calculateLetterGrade(students[i].average);
 
-        // Debug print statement
-        cout << "Calculated Average for " << students[i].studentName << ": " << students[i].average << " Grade: " << students[i].letterGrade << endl;
+
     }
 }
 
@@ -130,7 +129,7 @@ void reportCard(student students[], int studentCnt) {
     cout << "************************************************" << endl;
     // Loop through the studentNames array based on the numStudents value to output names, averages, and letter grade.
     for (int i = 0; i < studentCnt; ++i) {
-        cout << "Printing Student: " << students[i].studentName << endl;
+
 
         cout << left << setw(20) << students[i].studentName
             << setw(10) << students[i].studentID
